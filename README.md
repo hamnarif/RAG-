@@ -3,16 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conversational Question-Answering API with FastAPI</title>
 </head>
 <body>
-  <h1>Conversational RAG API with FastAPI</h1>
+  <h1>Conversational Question-Answering API with FastAPI</h1>
 
   <p>This repository contains code for setting up a conversational question-answering API using FastAPI, GPT-4, and Supabase.</p>
 
   <h2>Overview</h2>
 
-  <p>The conversational question-answering system is designed to interact with users. Users can input questions or prompts, and the system responds with relevant answers based on the conversation history and context. The system utilizes GPT-4all embeddings, mistral for language understanding and Supabase for storing and retrieving context embeddings.</p>
+  <p>The conversational question-answering system is designed to interact with users. Users can input questions or prompts, and the system responds with relevant answers based on the conversation history and context. The system utilizes GPT-4all embeddings, Mistral for language understanding and Supabase for storing and retrieving context embeddings.</p>
 
   <h2>Features</h2>
 
@@ -24,21 +23,12 @@
   </ul>
 
   <h2>Installation</h2>
-
   <ol>
     <li>Clone the repository:</li>
-    <code>
-      <pre>
-git clone &lt;repository-url&gt;
-cd RAG-
-      </pre>
-    </code>
+    <code>git clone &lt;repository-url&gt;</code>
+    <p>Navigate to the cloned directory.</p>
     <li>Install dependencies:</li>
-    <code>
-      <pre>
-pip install -r requirements.txt
-      </pre>
-    </code>
+    <code>pip install -r requirements.txt</code>
     <li>Set up environment variables:</li>
     <p>Create a <code>.env</code> file in the root directory and add the following variables:</p>
     <code>
@@ -54,11 +44,7 @@ SUPABASE_SERVICE_KEY=&lt;your-supabase-service-key&gt;
 
   <ol>
     <li>Run the FastAPI application:</li>
-    <code>
-      <pre>
-uvicorn driver:app --reload
-      </pre>
-    </code>
+    <code>uvicorn main:app --reload</code>
     <li>Access the API at <code>http://localhost:8000</code>.</li>
     <li>Send POST requests to <code>/process_user_input/</code> endpoint with user input in the request body to get AI responses.</li>
     <li>Perform health check by sending a GET request to <code>/healthcheck</code> endpoint.</li>
