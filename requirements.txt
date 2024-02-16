@@ -1,0 +1,7 @@
+fastapi                                  0.108.0
+fastapi-sessions                         0.3.2
+gpt4all                                  2.1.0
+langchain-cli                            0.0.21
+langchain-community                      0.0.17
+supabase                                 2.3.4
+unstructured[all-docs]                   0.12.3
